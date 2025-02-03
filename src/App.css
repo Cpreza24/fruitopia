@@ -46,3 +46,71 @@ button li button {
     margin: 0 auto;
     padding: 20px;
 }
+
+
+/* Fruits */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff; /* White */
+    border: 1px solid #ffc2d1; /* Soft Pink border */
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+    color: #77dd77; /* Leaf Green */
+}
+  /* NavBar */
+
+.navbar {
+    background-color: #ff6384; /* Strawberry Red */
+    color: #fff5f5; /* Cream White */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 3px solid #663300; /* Chocolate Brown border */
+  }
+  
+.navbar a {
+    color: #fff5f5; /* Cream White */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+  }
+  
+.navbar a:hover {
+    background-color: #ffc2d1; /* Soft Pink */
+    color: #663300; /* Chocolate Brown for contrast */
+  }
+  
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+.navbar-menu {
+    display: flex;
+    gap: 15px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #663300; /* Chocolate Brown */
+  }
