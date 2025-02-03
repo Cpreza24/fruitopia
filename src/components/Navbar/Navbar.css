@@ -1,0 +1,36 @@
+ /* NavBar */
+
+ .navbar {
+    background-color: #ff6384; /* Strawberry Red */
+    color: #fff5f5; /* Cream White */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 3px solid #663300; /* Chocolate Brown border */
+  }
+  
+.navbar a {
+    color: #fff5f5; /* Cream White */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+  }
+  
+.navbar a:hover {
+    background-color: #ffc2d1; /* Soft Pink */
+    color: #663300; /* Chocolate Brown for contrast */
+  }
+  
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+.navbar-menu {
+    display: flex;
+    gap: 15px;
+  }

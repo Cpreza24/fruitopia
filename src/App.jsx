@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import React from 'react'
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Fruits from './components/Fruits/Fruits';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
     const fruits = [
@@ -19,16 +23,10 @@ function App() {
       ];
 
     return (
-        <>
-            <div className="navbar-logo">Fruitopia</div>
-            <ul>
-                {
-                    fruits.map((fruit) => (
-                        <li key={fruit.id}>{fruit.name}</li>
-                    ))
-                }
-            </ul>
-            <footer>Made with 🔥 for learning React</footer>
+        <> 
+           <Navbar />
+           <Fruits fruits={fruits}/>
+           <Footer />
         </>
     );
 }
