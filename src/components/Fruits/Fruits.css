@@ -1,23 +1,22 @@
 /* Fruits */
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
-    background-color: #fff; /* White */
-    border: 1px solid #ffc2d1; /* Soft Pink border */
-    border-radius: 8px;
-    padding: 10px 15px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White */
+  border: 1px solid #ffc2d1; /* Soft Pink border */
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 li strong {
-    color: #77dd77; /* Leaf Green */
+  color: #77dd77; /* Leaf Green */
 }
- 
