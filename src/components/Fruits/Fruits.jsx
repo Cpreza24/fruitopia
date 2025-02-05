@@ -18,7 +18,7 @@ function Fruits() {
     { id: 12, name: 'Tomato', color: 'Red', inStock: false, emoji: '🍅' },
   ]);
 
-  const [fruit, setFruit] = useState('');
+  const [collectedFruits, setCollectedFruits] = useState([]);
 
   const toggleStock = (id) => {
     setFruits(
@@ -26,6 +26,19 @@ function Fruits() {
         fruit.id === id ? { ...fruit, inStock: !fruit.inStock } : fruit
       )
     );
+  };
+
+  const handleAddFruit = (fruit) => {
+    if (!fruit.inStock) {
+      console.log('fruit out of stock');
+      return;
+    }
+    setCollectedFruits([...collectedFruits, fruit]);
+  };
+  console.log(collectedFruits, 'collected Fruits');
+
+  const handleRemoveFruit = (fruit) => {
+    setCollectedFruits(collectedFruits.filter((f) => f.id !== fruit.id));
   };
 
   return (
@@ -41,6 +54,41 @@ function Fruits() {
           </li>
         ))}
       </ul>
+      <div>
+        <h1>Fruit Inventory</h1>
+        <div>
+          <h3>Available Fruits:</h3>
+          <ul>
+            {fruits.map((fruit) => (
+              <li key={fruit.id}>
+                <span>
+                  {fruit.name} {fruit.emoji}
+                </span>
+                {fruit.inStock && (
+                  <button onClick={() => handleAddFruit(fruit)}>
+                    Add to collection
+                  </button>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3>My Collection</h3>
+          <ul>
+            {collectedFruits.map((fruit) => (
+              <li key={fruit.id}>
+                <span>
+                  {fruit.name} {fruit.emoji}
+                </span>
+                <button onClick={() => handleRemoveFruit(fruit)}>
+                  Remove From Collection
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </>
   );
 }
