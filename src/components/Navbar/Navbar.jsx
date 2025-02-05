@@ -1,12 +1,8 @@
-import React from 'react'
-import './Navbar.css'
+import React from 'react';
+import './Navbar.css';
 
 function Navbar() {
-  return (
-    <div className="navbar-logo">Fruitopia</div>
-  )
+  return <div className='navbar-logo'>Fruitopia</div>;
 }
 
-export default Navbar
-
-
+export default Navbar;
