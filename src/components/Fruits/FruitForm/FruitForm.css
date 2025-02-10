@@ -1,0 +1,49 @@
+.fruit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff5f5; /* Cream White */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.fruit-form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #663300; /* Chocolate Brown */
+  margin-bottom: 8px;
+}
+
+.fruit-form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ff6384; /* Strawberry Red */
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.fruit-form input:focus {
+  border-color: #77dd77; /* Leaf Green */
+}
+
+.fruit-form button {
+  margin-top: 10px;
+  background-color: #ff6384; /* Strawberry Red */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fruit-form button:hover {
+  background-color: #ffc2d1; /* Soft Pink */
+}
