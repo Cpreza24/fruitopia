@@ -1,0 +1,47 @@
+.fruit-detail-container {
+  padding: 20px;
+  margin: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fruit-title {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.fruit-family {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.nutritions-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nutritions-section h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.nutritions-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nutritions-list li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.nutritions-list li strong {
+  color: #2e7d32;
+}
