@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { show } from '../../../services/fruitService';
-import FruitDetail from '../FruitDetail/FruitDetail';
+import FruitDetail from './FruitDetail/FruitDetail';
 
 function FruitSearch() {
   const [fruit, setFruit] = useState('');

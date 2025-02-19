@@ -6,7 +6,7 @@ import FruitList from './FruitList/FruitList';
 import { useState } from 'react';
 import { getAllFruits } from '../../services/fruitService';
 import FruitSearch from './FruitSearch/FruitSearch';
-import FruitDetail from './FruitDetail/FruitDetail';
+import FruitDetail from './FruitSearch/FruitDetail/FruitDetail';
 
 function Fruits() {
   const [fruits, setFruits] = useState([]);
