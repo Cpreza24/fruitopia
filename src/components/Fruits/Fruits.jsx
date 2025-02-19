@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Fruits.css';
 import FruitForm from './FruitForm/FruitForm';
 import FruitList from './FruitList/FruitList';
 import { useState } from 'react';
 import { getAllFruits } from '../../services/fruitService';
 import FruitSearch from './FruitSearch/FruitSearch';
+import FruitDetail from './FruitDetail/FruitDetail';
 
 function Fruits() {
   const [fruits, setFruits] = useState([]);
-
+  const { state } = useLocation();
+  const fruitData = state?.FruitData;
   const [collectedFruits, setCollectedFruits] = useState([]);
   useEffect(() => {
     const fetchFruits = async () => {
@@ -52,6 +55,12 @@ function Fruits() {
 
   return (
     <>
+      {fruitData && (
+        <>
+          <h2>SearchedFruit Detail</h2>
+          <FruitDetail fruit={fruitData} />
+        </>
+      )}
       <h1>Fruit List</h1>
       <FruitList fruits={fruits} />
       {/* add fruit form component here */}
