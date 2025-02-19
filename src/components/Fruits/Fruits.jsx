@@ -52,7 +52,7 @@ function Fruits() {
 
   return (
     <>
-      <FruitSearch fruits={fruits} />
+      <h1>Fruit List</h1>
       <FruitList fruits={fruits} />
       {/* add fruit form component here */}
       <FruitForm addFruit={addFruit} />
