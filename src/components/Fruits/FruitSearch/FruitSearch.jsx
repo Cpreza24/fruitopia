@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { show } from '../../services/fruitService';
-import FruitDetail from '../Fruits/FruitDetail/FruitDetail';
+import { show } from '../../../services/fruitService';
+import FruitDetail from '../FruitDetail/FruitDetail';
 
 function FruitSearch() {
   const [fruit, setFruit] = useState('');
